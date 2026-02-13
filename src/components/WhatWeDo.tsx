@@ -54,9 +54,9 @@ export function WhatWeDo() {
         }}
       >
         {services.map((service, index) => (
-          <ScrollReveal key={service.title} delay={index * 80}>
+          <ScrollReveal key={service.title} delay={index * 80} className="h-full">
             <div
-              className="card-base mouse-glow flex items-center gap-3"
+              className="card-base mouse-glow flex items-center gap-3 h-full"
               style={{ padding: "1.25rem 1.5rem" }}
             >
               <service.icon
