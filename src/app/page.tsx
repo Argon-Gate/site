@@ -1,4 +1,5 @@
 import {
+  BackgroundGlow,
   Header,
   Hero,
   WhatWeDo,
@@ -10,9 +11,10 @@ import {
 
 export default function Home() {
   return (
-    <>
+    <div style={{ position: "relative", overflowX: "hidden" }}>
+      <BackgroundGlow />
       <Header />
-      <main>
+      <main style={{ position: "relative" }}>
         <Hero />
         <WhatWeDo />
         <HowWeWork />
@@ -20,6 +22,6 @@ export default function Home() {
         <CTA />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

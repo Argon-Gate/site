@@ -1,3 +1,4 @@
+export { BackgroundGlow } from "./BackgroundGlow";
 export { Header } from "./Header";
 export { Hero } from "./Hero";
 export { WhatWeDo } from "./WhatWeDo";
