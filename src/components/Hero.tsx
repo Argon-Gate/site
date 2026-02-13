@@ -34,9 +34,11 @@ export function Hero() {
             lineHeight: 1.1,
           }}
         >
-          Seu time de tecnologia,
+          Conecte.
           <br />
-          sem a complexidade de contratar.
+          Automatize.
+          <br />
+          Evolua.
         </h1>
 
         {/* Subtítulo */}
