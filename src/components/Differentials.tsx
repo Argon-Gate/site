@@ -67,7 +67,7 @@ export function Differentials() {
             marginBottom: "1rem",
           }}
         >
-          Por que a Argon Gate?
+          O que garantimos
         </h2>
 
         <p
