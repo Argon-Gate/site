@@ -1,3 +1,7 @@
+"use client";
+
+import { ScrollReveal } from "./ScrollReveal";
+
 interface DifferentialItem {
   title: string;
   description: string;
@@ -32,22 +36,13 @@ const differentials: DifferentialItem[] = [
 
 export function Differentials() {
   return (
-    <section
-      id="diferenciais"
-      style={{
-        padding: "var(--section-padding-y) 1.5rem",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "var(--max-width)",
-          margin: "0 auto",
-        }}
-      >
+    <section id="diferenciais" className="section-container">
+      <ScrollReveal>
         <h2
           style={{
-            fontSize: "clamp(2rem, 3.5vw, 2.5rem)",
+            fontSize: "var(--text-h2)",
             fontWeight: 600,
+            letterSpacing: "var(--tracking-h2)",
             color: "var(--color-text-primary)",
             marginBottom: "1rem",
           }}
@@ -66,24 +61,12 @@ export function Differentials() {
         >
           Outsourcing que resolve de verdade — sem burocracia, com resultado.
         </p>
+      </ScrollReveal>
 
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "0.75rem",
-          }}
-        >
-          {differentials.map((item) => (
-            <div
-              key={item.title}
-              style={{
-                borderLeft: "3px solid var(--color-accent)",
-                padding: "1.25rem 1.5rem",
-                transition: "background-color 0.2s ease",
-              }}
-              className="differential-row"
-            >
+      <div className="flex flex-col" style={{ gap: "0.75rem" }}>
+        {differentials.map((item, index) => (
+          <ScrollReveal key={item.title} delay={index * 80}>
+            <div className="differential-row">
               <span
                 style={{
                   fontSize: "1.1rem",
@@ -103,8 +86,8 @@ export function Differentials() {
                 — {item.description}
               </span>
             </div>
-          ))}
-        </div>
+          </ScrollReveal>
+        ))}
       </div>
     </section>
   );

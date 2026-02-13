@@ -1,5 +1,3 @@
-"use client";
-
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -11,19 +9,16 @@ export function Footer() {
       }}
     >
       <div
+        className="flex items-center justify-between flex-wrap"
         style={{
           maxWidth: "var(--max-width)",
           margin: "0 auto",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
           gap: "1rem",
         }}
       >
         <span
           style={{
-            fontSize: "0.875rem",
+            fontSize: "var(--text-small)",
             color: "var(--color-text-secondary)",
           }}
         >
@@ -31,55 +26,13 @@ export function Footer() {
         </span>
 
         <nav className="flex gap-6">
-          <a
-            href="#servicos"
-            style={{
-              fontSize: "0.875rem",
-              color: "var(--color-text-secondary)",
-              textDecoration: "none",
-              transition: "color 0.2s",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.color = "var(--color-text-primary)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.color = "var(--color-text-secondary)";
-            }}
-          >
+          <a href="#servicos" className="link-animated">
             Serviços
           </a>
-          <a
-            href="#processo"
-            style={{
-              fontSize: "0.875rem",
-              color: "var(--color-text-secondary)",
-              textDecoration: "none",
-              transition: "color 0.2s",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.color = "var(--color-text-primary)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.color = "var(--color-text-secondary)";
-            }}
-          >
+          <a href="#processo" className="link-animated">
             Processo
           </a>
-          <a
-            href="#contato"
-            style={{
-              fontSize: "0.875rem",
-              color: "var(--color-text-secondary)",
-              textDecoration: "none",
-              transition: "color 0.2s",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.color = "var(--color-text-primary)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.color = "var(--color-text-secondary)";
-            }}
-          >
+          <a href="#contato" className="link-animated">
             Contato
           </a>
         </nav>

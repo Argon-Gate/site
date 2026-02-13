@@ -5,26 +5,31 @@ import { ArrowRight } from "lucide-react";
 export function Hero() {
   return (
     <section
+      className="flex items-center justify-center"
       style={{
         minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
         padding: "8rem 1.5rem 6rem",
       }}
     >
       <div
-        style={{
-          maxWidth: "var(--max-width)",
-          width: "100%",
-          textAlign: "center",
-        }}
+        className="w-full text-center"
+        style={{ maxWidth: "var(--max-width)" }}
       >
+        {/* Badge */}
+        <div className="hero-animate hero-animate-delay-1" style={{ marginBottom: "2rem" }}>
+          <span className="hero-badge">
+            <span className="hero-badge-dot" />
+            Outsourcing de desenvolvimento de software
+          </span>
+        </div>
+
+        {/* Headline */}
         <h1
+          className="hero-animate hero-animate-delay-2 hero-gradient-text"
           style={{
-            fontSize: "clamp(2.5rem, 5vw, 4rem)",
+            fontSize: "var(--text-hero)",
             fontWeight: 700,
-            color: "var(--color-text-primary)",
+            letterSpacing: "var(--tracking-hero)",
             marginBottom: "1.5rem",
             lineHeight: 1.1,
           }}
@@ -34,7 +39,9 @@ export function Hero() {
           sem a complexidade de contratar.
         </h1>
 
+        {/* Subtítulo */}
         <p
+          className="hero-animate hero-animate-delay-3"
           style={{
             fontSize: "clamp(1.05rem, 1.5vw, 1.25rem)",
             color: "var(--color-text-secondary)",
@@ -48,33 +55,14 @@ export function Hero() {
           produção. APIs, integrações e aplicações completas.
         </p>
 
-        <a
-          href="#contato"
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.5rem",
-            backgroundColor: "var(--color-accent)",
-            color: "var(--color-text-primary)",
-            fontFamily: "var(--font-body)",
-            fontSize: "1rem",
-            fontWeight: 500,
-            padding: "0.875rem 2rem",
-            borderRadius: "var(--radius)",
-            textDecoration: "none",
-            transition: "background-color 0.2s",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor =
-              "var(--color-accent-hover)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = "var(--color-accent)";
-          }}
-        >
-          Fale conosco
-          <ArrowRight size={18} strokeWidth={1.5} />
-        </a>
+        {/* CTA */}
+        <div className="hero-animate hero-animate-delay-4">
+          <a href="#contato" className="btn-primary">
+            Fale conosco
+            <ArrowRight size={18} strokeWidth={1.5} />
+          </a>
+        </div>
+
       </div>
     </section>
   );

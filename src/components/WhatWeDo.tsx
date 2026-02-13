@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Code2,
   Plug,
@@ -9,6 +11,7 @@ import {
   FileCode,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import { ScrollReveal } from "./ScrollReveal";
 
 interface ServiceItem {
   icon: LucideIcon;
@@ -28,50 +31,37 @@ const services: ServiceItem[] = [
 
 export function WhatWeDo() {
   return (
-    <section
-      id="servicos"
-      style={{
-        padding: "var(--section-padding-y) 1.5rem",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "var(--max-width)",
-          margin: "0 auto",
-        }}
-      >
+    <section id="servicos" className="section-container">
+      <ScrollReveal>
         <h2
           style={{
-            fontSize: "clamp(2rem, 3.5vw, 2.5rem)",
+            fontSize: "var(--text-h2)",
             fontWeight: 600,
+            letterSpacing: "var(--tracking-h2)",
             color: "var(--color-text-primary)",
             marginBottom: "3rem",
           }}
         >
           O que fazemos
         </h2>
+      </ScrollReveal>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-            gap: "1.25rem",
-          }}
-        >
-          {services.map((service) => (
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+          gap: "1.25rem",
+        }}
+      >
+        {services.map((service, index) => (
+          <ScrollReveal key={service.title} delay={index * 80}>
             <div
-              key={service.title}
-              className="flex items-center gap-3"
-              style={{
-                backgroundColor: "var(--color-bg-secondary)",
-                border: "1px solid var(--color-border)",
-                borderRadius: "var(--radius)",
-                padding: "1.25rem 1.5rem",
-              }}
+              className="card-base mouse-glow flex items-center gap-3"
+              style={{ padding: "1.25rem 1.5rem" }}
             >
               <service.icon
                 size={20}
-                style={{ color: "var(--color-accent)", flexShrink: 0 }}
+                className="text-accent shrink-0"
                 strokeWidth={1.5}
               />
               <span
@@ -84,8 +74,8 @@ export function WhatWeDo() {
                 {service.title}
               </span>
             </div>
-          ))}
-        </div>
+          </ScrollReveal>
+        ))}
       </div>
     </section>
   );

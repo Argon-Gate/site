@@ -7,18 +7,23 @@ import {
   Differentials,
   CTA,
   Footer,
+  SectionDivider,
 } from "@/components";
 
 export default function Home() {
   return (
-    <div style={{ position: "relative", overflowX: "hidden" }}>
+    <div className="relative" style={{ overflowX: "hidden" }}>
       <BackgroundGlow />
       <Header />
-      <main style={{ position: "relative" }}>
+      <main className="relative">
         <Hero />
+        <SectionDivider />
         <WhatWeDo />
+        <SectionDivider />
         <HowWeWork />
+        <SectionDivider />
         <Differentials />
+        <SectionDivider />
         <CTA />
       </main>
       <Footer />

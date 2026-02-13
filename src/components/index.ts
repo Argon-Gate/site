@@ -6,3 +6,5 @@ export { HowWeWork } from "./HowWeWork";
 export { Differentials } from "./Differentials";
 export { CTA } from "./CTA";
 export { Footer } from "./Footer";
+export { ScrollReveal } from "./ScrollReveal";
+export { SectionDivider } from "./SectionDivider";

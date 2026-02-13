@@ -1,3 +1,5 @@
+"use client";
+
 import { Fragment } from "react";
 import {
   Search,
@@ -15,6 +17,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { CSSProperties } from "react";
+import { ScrollReveal } from "./ScrollReveal";
 
 interface StepData {
   number: string;
@@ -104,7 +107,9 @@ function StepCard({
   style?: CSSProperties;
 }) {
   const Icon = step.icon;
-  const cardClass = step.highlight ? "flow-card flow-card-highlight" : "flow-card";
+  const cardClass = step.highlight
+    ? "flow-card flow-card-highlight"
+    : "flow-card";
   return (
     <div className={cardClass} style={style}>
       <div className="flex items-center gap-3 mb-3">
@@ -114,7 +119,7 @@ function StepCard({
             fontSize: "0.8rem",
             fontWeight: 600,
             color: "var(--color-accent)",
-            backgroundColor: "rgba(37, 99, 235, 0.1)",
+            backgroundColor: "var(--color-accent-subtle)",
             padding: "0.2rem 0.6rem",
             borderRadius: "6px",
           }}
@@ -139,7 +144,7 @@ function StepCard({
       </h3>
       <p
         style={{
-          fontSize: "0.875rem",
+          fontSize: "var(--text-small)",
           color: "var(--color-text-secondary)",
           margin: 0,
           lineHeight: 1.6,
@@ -161,7 +166,8 @@ function HConnector({
   const isRight = direction === "right";
   return (
     <div
-      style={{ display: "flex", alignItems: "center", ...style }}
+      className="flex items-center"
+      style={style}
       aria-hidden="true"
     >
       {!isRight && (
@@ -186,12 +192,8 @@ function HConnector({
 function VConnector({ style }: { style?: CSSProperties }) {
   return (
     <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        ...style,
-      }}
+      className="flex flex-col items-center"
+      style={style}
       aria-hidden="true"
     >
       <div style={{ flex: 1, borderLeft: `2px dashed ${CONNECTOR_COLOR}` }} />
@@ -207,11 +209,8 @@ function VConnector({ style }: { style?: CSSProperties }) {
 function MobileConnector() {
   return (
     <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        height: "2rem",
-      }}
+      className="flex justify-center"
+      style={{ height: "2rem" }}
       aria-hidden="true"
     >
       <div style={{ borderLeft: `2px dashed ${CONNECTOR_COLOR}` }} />
@@ -221,15 +220,13 @@ function MobileConnector() {
 
 export function HowWeWork() {
   return (
-    <section
-      id="processo"
-      style={{ padding: "var(--section-padding-y) 1.5rem" }}
-    >
-      <div style={{ maxWidth: "var(--max-width)", margin: "0 auto" }}>
+    <section id="processo" className="section-container">
+      <ScrollReveal>
         <h2
           style={{
-            fontSize: "clamp(2rem, 3.5vw, 2.5rem)",
+            fontSize: "var(--text-h2)",
             fontWeight: 600,
+            letterSpacing: "var(--tracking-h2)",
             color: "var(--color-text-primary)",
             marginBottom: "1rem",
           }}
@@ -248,8 +245,10 @@ export function HowWeWork() {
           Um processo claro, colaborativo e orientado a resultado — do
           entendimento inicial ao lançamento em produção.
         </p>
+      </ScrollReveal>
 
-        {/* Desktop: fluxo serpentina em grid 3 colunas */}
+      {/* Desktop: fluxo serpentina em grid 3 colunas */}
+      <ScrollReveal>
         <div className="flow-grid">
           {/* Linha 1: 01 → 02 → 03 */}
           <StepCard step={steps[0]} style={{ gridColumn: 1, gridRow: 1 }} />
@@ -267,7 +266,7 @@ export function HowWeWork() {
           {/* Curva: descendo pela direita */}
           <VConnector style={{ gridColumn: 5, gridRow: 2 }} />
 
-          {/* Linha 2: 04 → 05 → 06 (exibida da direita para esquerda) */}
+          {/* Linha 2: 04 → 05 → 06 (direita para esquerda) */}
           <StepCard step={steps[3]} style={{ gridColumn: 5, gridRow: 3 }} />
           <HConnector
             direction="left"
@@ -296,16 +295,18 @@ export function HowWeWork() {
           />
           <StepCard step={steps[8]} style={{ gridColumn: 5, gridRow: 5 }} />
         </div>
+      </ScrollReveal>
 
-        {/* Mobile: fluxo vertical */}
-        <div className="flow-mobile">
-          {steps.map((step, i) => (
-            <Fragment key={step.number}>
+      {/* Mobile: fluxo vertical */}
+      <div className="flow-mobile">
+        {steps.map((step, i) => (
+          <Fragment key={step.number}>
+            <ScrollReveal delay={i * 80}>
               <StepCard step={step} />
-              {i < steps.length - 1 && <MobileConnector />}
-            </Fragment>
-          ))}
-        </div>
+            </ScrollReveal>
+            {i < steps.length - 1 && <MobileConnector />}
+          </Fragment>
+        ))}
       </div>
     </section>
   );
