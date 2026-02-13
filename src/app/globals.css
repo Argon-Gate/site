@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+/* =========================================================
+   Argon Gate — Design Tokens (CSS Custom Properties)
+
+   Estes tokens são a fonte de verdade para toda a estilização.
+   Para alterar a identidade visual, modifique os valores abaixo
+   e no arquivo src/tokens/design-tokens.ts.
+   ========================================================= */
+
+:root {
+  /* Cores */
+  --color-bg-primary: #0B0F14;
+  --color-bg-secondary: #111827;
+  --color-border: #1E293B;
+  --color-text-primary: #F1F5F9;
+  --color-text-secondary: #94A3B8;
+  --color-accent: #2563EB;
+  --color-accent-hover: #1D4ED8;
+
+  /* Tipografia */
+  --font-heading: 'Sora', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --heading-tracking: -0.02em;
+
+  /* Espaçamento */
+  --section-padding-y: 6rem;
+  --max-width: 1200px;
+
+  /* Bordas */
+  --radius: 12px;
+}
+
+/* Registra tokens no Tailwind v4 */
+@theme inline {
+  --color-bg-primary: var(--color-bg-primary);
+  --color-bg-secondary: var(--color-bg-secondary);
+  --color-border: var(--color-border);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+
+  --radius-default: var(--radius);
+}
+
+/* =========================================================
+   Base styles
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: var(--heading-tracking);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-text-primary);
+}
