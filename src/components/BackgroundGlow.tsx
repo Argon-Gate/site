@@ -15,7 +15,7 @@ export function BackgroundGlow() {
           height: 500,
           background:
             "radial-gradient(circle, var(--color-accent) 0%, transparent 70%)",
-          opacity: 0.06,
+          opacity: 0.08,
           filter: "blur(120px)",
           animation: "drift1 40s ease-in-out infinite",
         }}
@@ -31,7 +31,7 @@ export function BackgroundGlow() {
           height: 450,
           background:
             "conic-gradient(from 180deg, var(--color-accent), transparent, var(--color-accent))",
-          opacity: 0.04,
+          opacity: 0.06,
           filter: "blur(140px)",
           animation: "drift2 50s ease-in-out infinite",
         }}
@@ -47,7 +47,7 @@ export function BackgroundGlow() {
           height: 400,
           background:
             "radial-gradient(circle, var(--color-accent) 0%, transparent 70%)",
-          opacity: 0.05,
+          opacity: 0.07,
           filter: "blur(130px)",
           animation: "drift3 60s ease-in-out infinite",
         }}
