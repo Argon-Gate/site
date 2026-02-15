@@ -18,21 +18,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: 'Argon Gate — Arquitetura sólida para negócios digitais',
+    title: 'Argon Gate — Outsourcing de Desenvolvimento de Software',
     description:
-        'Desenvolvemos software sob medida com foco em estrutura, escalabilidade e previsibilidade. Outsourcing de engenharia de software com excelência técnica.',
+        'Outsourcing de desenvolvimento para criar e evoluir sistemas. APIs, integrações, automação de processos e aplicações web completas com entrega ágil e sem burocracia.',
     keywords: [
-        'outsourcing',
-        'software',
-        'desenvolvimento',
-        'arquitetura',
-        'engenharia',
-        'escalabilidade',
+        'outsourcing de desenvolvimento',
+        'desenvolvimento de software',
+        'API',
+        'integração de sistemas',
+        'automação de processos',
+        'sistemas web',
+        'desenvolvimento web',
         'Argon Gate',
     ],
     openGraph: {
-        title: 'Argon Gate — Arquitetura sólida para negócios digitais',
-        description: 'Desenvolvemos software sob medida com foco em estrutura, escalabilidade e previsibilidade.',
+        title: 'Argon Gate — Outsourcing de Desenvolvimento de Software',
+        description:
+            'Outsourcing de desenvolvimento para criar e evoluir sistemas. APIs, integrações e aplicações web completas.',
         type: 'website',
         locale: 'pt_BR',
     },
