@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+*.dist
+
+# Generated files
+*.tsbuildinfo
+coverage/
+
+# Package files
+package-lock.json
+
+# Ambiente
+.env*local
+
+# IDE
+.vscode/
+.idea/
