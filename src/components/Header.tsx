@@ -39,7 +39,7 @@ export function Header() {
                             backgroundColor: '#fff',
                         }}
                     >
-                        <Image src="/logo.png" alt="Argon Gate" width={18} height={18} />
+                        <Image src="/logo.webp" alt="Argon Gate" width={18} height={18} />
                     </span>
                     <span
                         style={{

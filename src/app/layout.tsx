@@ -51,7 +51,7 @@ export const metadata: Metadata = {
         siteName: 'Argon Gate',
         images: [
             {
-                url: '/logo.png',
+                url: '/logo.webp',
                 alt: 'Argon Gate',
             },
         ],
