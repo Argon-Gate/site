@@ -58,7 +58,7 @@ export const metadata: Metadata = {
         title: 'Argon Gate — Outsourcing de Desenvolvimento de Software',
         description:
             'Outsourcing de desenvolvimento de software sob medida. APIs, integrações, automação e sistemas escaláveis.',
-        images: ['/logo.png'],
+        images: ['/logo.webp'],
     },
     alternates: {
         canonical: '/',
@@ -83,7 +83,7 @@ const jsonLd = {
     description:
         'Outsourcing de desenvolvimento de software sob medida. APIs, integrações, automação e sistemas escaláveis.',
     url: BASE_URL,
-    logo: `${BASE_URL}/logo.png`,
+    logo: `${BASE_URL}/logo.webp`,
     areaServed: {
         '@type': 'Country',
         name: 'Brazil',

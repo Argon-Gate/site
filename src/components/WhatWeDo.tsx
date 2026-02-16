@@ -1,5 +1,3 @@
-'use client';
-
 import { Code2, Plug, Wrench, GitBranch, TestTube, Gauge, Cog, FileCode } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { ScrollReveal } from './ScrollReveal';

@@ -63,7 +63,7 @@ export default [
             'no-else-return': 'error',
             'react/jsx-uses-react': 'off',
             'react/react-in-jsx-scope': 'off',
-            'react-hooks/exhaustive-deps': 'off',
+            'react-hooks/exhaustive-deps': 'warn',
             '@typescript-eslint/no-explicit-any': 'off',
             '@typescript-eslint/no-non-null-assertion': 'error',
             '@typescript-eslint/no-unused-vars': 'error',
