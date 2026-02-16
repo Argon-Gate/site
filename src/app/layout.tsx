@@ -17,27 +17,78 @@ const inter = Inter({
     weight: ['400', '500', '600'],
 });
 
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://argongate.com.br';
+
 export const metadata: Metadata = {
+    metadataBase: new URL(BASE_URL),
     title: 'Argon Gate — Outsourcing de Desenvolvimento de Software',
     description:
-        'Outsourcing de desenvolvimento para criar e evoluir sistemas. APIs, integrações, automação de processos e aplicações web completas com entrega ágil e sem burocracia.',
+        'Outsourcing de desenvolvimento de software sob medida. APIs, integrações, automação e sistemas escaláveis. Terceirização de engenharia de software com excelência técnica.',
     keywords: [
-        'outsourcing de desenvolvimento',
-        'desenvolvimento de software',
-        'API',
-        'integração de sistemas',
+        'outsourcing de desenvolvimento de software',
+        'empresa de desenvolvimento de software terceirizada',
+        'terceirização de desenvolvimento',
+        'outsourcing de engenharia de software',
+        'desenvolvimento de software sob medida',
+        'desenvolvimento de sistemas web e APIs',
+        'integração entre sistemas',
         'automação de processos',
-        'sistemas web',
-        'desenvolvimento web',
-        'Argon Gate',
+        'outsourcing de TI',
+        'fábrica de software',
     ],
+    authors: [{ name: 'Argon Gate' }],
+    creator: 'Argon Gate',
     openGraph: {
         title: 'Argon Gate — Outsourcing de Desenvolvimento de Software',
         description:
-            'Outsourcing de desenvolvimento para criar e evoluir sistemas. APIs, integrações e aplicações web completas.',
+            'Outsourcing de desenvolvimento de software sob medida. APIs, integrações, automação e sistemas escaláveis.',
         type: 'website',
         locale: 'pt_BR',
+        url: '/',
+        siteName: 'Argon Gate',
     },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Argon Gate — Outsourcing de Desenvolvimento de Software',
+        description:
+            'Outsourcing de desenvolvimento de software sob medida. APIs, integrações, automação e sistemas escaláveis.',
+    },
+    alternates: {
+        canonical: '/',
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
+    },
+};
+
+const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    name: 'Argon Gate',
+    description:
+        'Outsourcing de desenvolvimento de software sob medida. APIs, integrações, automação e sistemas escaláveis.',
+    url: BASE_URL,
+    logo: `${BASE_URL}/logo.png`,
+    areaServed: {
+        '@type': 'Country',
+        name: 'Brazil',
+    },
+    serviceType: [
+        'Outsourcing de desenvolvimento de software',
+        'Desenvolvimento de sistemas web e APIs',
+        'Integração entre sistemas',
+        'Automação de processos internos',
+        'Testes automatizados',
+        'Refatoração e melhoria de performance',
+    ],
 };
 
 export default function RootLayout({
@@ -47,6 +98,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="pt-BR">
+            <head>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+            </head>
+
             <body className={`${sora.variable} ${inter.variable}`}>{children}</body>
         </html>
     );

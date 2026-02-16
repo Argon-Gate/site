@@ -51,15 +51,16 @@ export function WhatWeDo() {
                             style={{ padding: '1.25rem 1.5rem' }}
                         >
                             <service.icon size={20} className="text-accent shrink-0" strokeWidth={1.5} />
-                            <span
+                            <h3
                                 style={{
                                     fontSize: '0.95rem',
                                     fontWeight: 500,
                                     color: 'var(--color-text-primary)',
+                                    margin: 0,
                                 }}
                             >
                                 {service.title}
-                            </span>
+                            </h3>
                         </div>
                     </ScrollReveal>
                 ))}

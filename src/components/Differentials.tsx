@@ -63,15 +63,16 @@ export function Differentials() {
                 {differentials.map((item, index) => (
                     <ScrollReveal key={item.title} delay={index * 80}>
                         <div className="differential-row">
-                            <span
+                            <h3
                                 style={{
                                     fontSize: '1.1rem',
                                     fontWeight: 600,
                                     color: 'var(--color-text-primary)',
+                                    margin: 0,
                                 }}
                             >
                                 {item.title}
-                            </span>
+                            </h3>
                             <span
                                 style={{
                                     fontSize: '1rem',
