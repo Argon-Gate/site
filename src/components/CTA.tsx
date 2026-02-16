@@ -15,7 +15,7 @@ function WhatsAppIcon({ size = 18 }: { size?: number }) {
 }
 
 const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'contato@argongate.com.br';
-const CONTACT_WHATSAPP = process.env.NEXT_PUBLIC_CONTACT_WHATSAPP ?? '5500000000000';
+const CONTACT_WHATSAPP = process.env.NEXT_PUBLIC_WHATSAPP_URL ?? 'https://wa.me/+5500000000000';
 
 export function CTA() {
     const sectionRef = useSectionTracking<HTMLElement>('contato');
