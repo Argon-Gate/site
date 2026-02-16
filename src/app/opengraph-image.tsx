@@ -3,6 +3,7 @@ import { ImageResponse } from 'next/og';
 export const runtime = 'edge';
 
 export const alt = 'Argon Gate — Outsourcing de Desenvolvimento de Software';
+// eslint-disable-next-line react-refresh/only-export-components
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
