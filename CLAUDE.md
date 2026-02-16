@@ -18,16 +18,14 @@ Este é o site institucional/landing page da **Argon Gate** — uma aplicação 
 
 - `src/app/page.tsx` — Página única composta por componentes de seção
 - `src/components/` — Componentes de seção (Header, Hero, WhatWeDo, HowWeWork, Differentials, CTA, Footer), exportados via barrel em `index.ts`
-- `src/tokens/design-tokens.ts` — Design tokens centralizados (cores, tipografia, espaçamento, bordas) como objeto const tipado
-- `src/app/globals.css` — Custom properties CSS que espelham os design tokens, registradas no Tailwind v4 via `@theme inline`
+- `src/app/globals.css` — Entry point CSS que importa os módulos de `src/styles/`
+- `src/styles/` — CSS modular: tokens, theme (Tailwind v4), base, accessibility, utilities, animations, hero, flow, components
 
 ### Design system
 
-Os design tokens vivem em dois lugares que devem estar sempre sincronizados:
-1. **Custom properties CSS** em `globals.css` `:root` — consumidas por estilos inline e classes Tailwind
-2. **Tokens TypeScript** em `src/tokens/design-tokens.ts` — para uso programático nos componentes
+Os design tokens são definidos como CSS custom properties em `src/styles/tokens.css` (fonte única de verdade) e registrados no Tailwind v4 via `@theme inline` em `src/styles/theme.css`.
 
-Cores: tema escuro com `--color-bg-primary` (#0B0F14), azul de destaque (#2563EB).
+Cores: tema escuro com `--color-bg-primary` (#08090A), azul de destaque (#2563EB).
 Fontes: **Sora** (headings) e **Inter** (corpo), carregadas via `next/font/google` em `layout.tsx` como variáveis CSS `--font-sora` / `--font-inter`.
 
 ### Convenções
