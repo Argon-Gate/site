@@ -109,7 +109,12 @@ export default function RootLayout({
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             </head>
 
-            <body className={`${sora.variable} ${inter.variable}`}>{children}</body>
+            <body className={`${sora.variable} ${inter.variable}`}>
+                <a href="#main-content" className="skip-to-content">
+                    Pular para o conteúdo principal
+                </a>
+                {children}
+            </body>
         </html>
     );
 }

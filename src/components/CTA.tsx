@@ -13,6 +13,7 @@ function WhatsAppIcon({ size = 18 }: { size?: number }) {
 }
 
 const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'contato@argongate.com.br';
+const CONTACT_WHATSAPP = process.env.NEXT_PUBLIC_CONTACT_WHATSAPP ?? '5500000000000';
 
 export function CTA() {
     const [copied, setCopied] = useState(false);
@@ -66,7 +67,7 @@ export function CTA() {
                         }}
                     >
                         <a
-                            href="https://wa.me/SEU_NUMERO_AQUI"
+                            href={`https://wa.me/${CONTACT_WHATSAPP}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-primary"

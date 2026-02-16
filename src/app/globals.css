@@ -115,6 +115,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =========================================================
+   Skip-to-content (acessibilidade)
+   ========================================================= */
+
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-accent);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--text-small);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-to-content:focus {
+  top: 1rem;
+}
+
+/* =========================================================
    Utility classes
    ========================================================= */
 
@@ -162,6 +186,11 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 4px 20px var(--color-accent-glow);
 }
 
+.btn-primary:focus-visible {
+  outline: 2px solid var(--color-text-primary);
+  outline-offset: 2px;
+}
+
 .btn-email-copy {
   display: inline-flex;
   align-items: center;
@@ -181,6 +210,11 @@ h1, h2, h3, h4, h5, h6 {
 .btn-email-copy:hover {
   color: var(--color-text-primary);
   border-color: var(--color-text-secondary);
+}
+
+.btn-email-copy:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 .btn-ghost {
@@ -205,6 +239,11 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-text-primary);
   transform: translateY(-1px);
   box-shadow: 0 4px 20px var(--color-accent-glow);
+}
+
+.btn-ghost:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 /* =========================================================
@@ -234,6 +273,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .link-animated:hover {
   color: var(--color-text-primary);
+}
+
+.link-animated:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 .link-animated:hover::after {

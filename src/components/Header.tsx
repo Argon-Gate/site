@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export function Header() {
     return (
@@ -18,8 +19,8 @@ export function Header() {
                     padding: '1rem 1.5rem',
                 }}
             >
-                <a
-                    href="#"
+                <Link
+                    href="/"
                     className="flex items-center gap-2"
                     style={{ textDecoration: 'none' }}
                     aria-label="Argon Gate - Página inicial"
@@ -48,7 +49,7 @@ export function Header() {
                     >
                         Argon Gate
                     </span>
-                </a>
+                </Link>
 
                 <a href="#contato" className="btn-ghost">
                     Fale conosco

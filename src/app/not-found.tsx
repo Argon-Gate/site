@@ -24,7 +24,7 @@ export default function NotFound() {
                     marginBottom: '1rem',
                 }}
             >
-                Pagina nao encontrada
+                Página não encontrada
             </h1>
 
             <p
@@ -34,11 +34,11 @@ export default function NotFound() {
                     marginBottom: '2rem',
                 }}
             >
-                O conteudo que voce procura nao existe ou foi movido.
+                O conteúdo que você procura não existe ou foi movido.
             </p>
 
             <Link href="/" className="btn-primary" style={{ textDecoration: 'none' }}>
-                Voltar para o inicio
+                Voltar para o início
             </Link>
         </div>
     );
