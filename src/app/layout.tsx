@@ -46,12 +46,19 @@ export const metadata: Metadata = {
         locale: 'pt_BR',
         url: '/',
         siteName: 'Argon Gate',
+        images: [
+            {
+                url: '/logo.png',
+                alt: 'Argon Gate',
+            },
+        ],
     },
     twitter: {
         card: 'summary_large_image',
         title: 'Argon Gate — Outsourcing de Desenvolvimento de Software',
         description:
             'Outsourcing de desenvolvimento de software sob medida. APIs, integrações, automação e sistemas escaláveis.',
+        images: ['/logo.png'],
     },
     alternates: {
         canonical: '/',
