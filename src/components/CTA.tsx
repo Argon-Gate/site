@@ -1,5 +1,9 @@
 'use client';
 
+import { Mail, Copy, Check } from 'lucide-react';
+import { useState } from 'react';
+import { ScrollReveal } from './ScrollReveal';
+
 function WhatsAppIcon({ size = 18 }: { size?: number }) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
@@ -7,9 +11,19 @@ function WhatsAppIcon({ size = 18 }: { size?: number }) {
         </svg>
     );
 }
-import { ScrollReveal } from './ScrollReveal';
+
+const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'contato@argongate.com.br';
 
 export function CTA() {
+    const [copied, setCopied] = useState(false);
+
+    function handleCopyEmail() {
+        navigator.clipboard.writeText(CONTACT_EMAIL).then(() => {
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+        });
+    }
+
     return (
         <section id="contato" className="section-container">
             <ScrollReveal>
@@ -42,7 +56,15 @@ export function CTA() {
                         Você foca no seu negócio, nós cuidamos da tecnologia. Fale com a Argon Gate e comece agora.
                     </p>
 
-                    <div style={{ position: 'relative' }}>
+                    <div
+                        style={{
+                            position: 'relative',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                            gap: '0.75rem',
+                        }}
+                    >
                         <a
                             href="https://wa.me/SEU_NUMERO_AQUI"
                             target="_blank"
@@ -53,6 +75,17 @@ export function CTA() {
                             <WhatsAppIcon size={18} />
                             Chamar no WhatsApp
                         </a>
+
+                        <button
+                            type="button"
+                            onClick={handleCopyEmail}
+                            className="btn-email-copy"
+                            aria-label="Copiar email de contato"
+                        >
+                            <Mail size={16} />
+                            <span>{CONTACT_EMAIL}</span>
+                            {copied ? <Check size={14} /> : <Copy size={14} />}
+                        </button>
                     </div>
                 </div>
             </ScrollReveal>
