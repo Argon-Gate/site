@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { AnalyticsEvents } from '@/lib/analytics';
 
 export function Header() {
     return (
@@ -51,7 +54,7 @@ export function Header() {
                     </span>
                 </Link>
 
-                <a href="#contato" className="btn-ghost">
+                <a href="#contato" className="btn-ghost" onClick={() => AnalyticsEvents.headerCtaClick()}>
                     Fale conosco
                 </a>
             </div>

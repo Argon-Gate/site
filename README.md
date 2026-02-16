@@ -27,6 +27,12 @@ Acesse [http://localhost:3000](http://localhost:3000) no navegador para visualiz
 - [Tailwind CSS](https://tailwindcss.com) v4
 - [Lucide React](https://lucide.dev) (ícones)
 
+## Documentação
+
+Guias de configuração e integrações estão disponíveis em [`docs/`](docs/):
+
+- [Google Analytics (GA4)](docs/google-analytics.md) — Configuração, eventos rastreados e arquitetura
+
 ## Deploy
 
 O projeto possui deploy contínuo na [Netlify](https://www.netlify.com). A cada push na branch principal, o build é disparado automaticamente pela plataforma.

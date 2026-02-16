@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { Inter, Sora } from 'next/font/google';
 import './globals.css';
@@ -16,6 +17,8 @@ const inter = Inter({
     display: 'swap',
     weight: ['400', '500', '600'],
 });
+
+const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://argongate.com.br';
 
@@ -114,6 +117,7 @@ export default function RootLayout({
                     Pular para o conteúdo principal
                 </a>
                 {children}
+                {gaId && <GoogleAnalytics gaId={gaId} />}
             </body>
         </html>
     );

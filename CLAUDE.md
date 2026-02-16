@@ -20,6 +20,7 @@ Este é o site institucional/landing page da **Argon Gate** — uma aplicação 
 - `src/components/` — Componentes de seção (Header, Hero, WhatWeDo, HowWeWork, Differentials, CTA, Footer), exportados via barrel em `index.ts`
 - `src/app/globals.css` — Entry point CSS que importa os módulos de `src/styles/`
 - `src/styles/` — CSS modular: tokens, theme (Tailwind v4), base, accessibility, utilities, animations, hero, flow, components
+- `docs/` — Documentação técnica do projeto (configurações, integrações, guias)
 
 ### Design system
 

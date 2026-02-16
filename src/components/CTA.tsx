@@ -2,6 +2,8 @@
 
 import { Mail, Copy, Check } from 'lucide-react';
 import { useState } from 'react';
+import { useSectionTracking } from '@/hooks/useSectionTracking';
+import { AnalyticsEvents } from '@/lib/analytics';
 import { ScrollReveal } from './ScrollReveal';
 
 function WhatsAppIcon({ size = 18 }: { size?: number }) {
@@ -16,17 +18,19 @@ const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'contato@argongat
 const CONTACT_WHATSAPP = process.env.NEXT_PUBLIC_CONTACT_WHATSAPP ?? '5500000000000';
 
 export function CTA() {
+    const sectionRef = useSectionTracking<HTMLElement>('contato');
     const [copied, setCopied] = useState(false);
 
     function handleCopyEmail() {
         navigator.clipboard.writeText(CONTACT_EMAIL).then(() => {
             setCopied(true);
+            AnalyticsEvents.emailCopy();
             setTimeout(() => setCopied(false), 2000);
         });
     }
 
     return (
-        <section id="contato" className="section-container">
+        <section id="contato" ref={sectionRef} className="section-container">
             <ScrollReveal>
                 <div className="cta-card text-center" style={{ position: 'relative' }}>
                     <h2
@@ -72,6 +76,7 @@ export function CTA() {
                             rel="noopener noreferrer"
                             className="btn-primary"
                             aria-label="Chamar no WhatsApp"
+                            onClick={() => AnalyticsEvents.whatsappClick()}
                         >
                             <WhatsAppIcon size={18} />
                             Chamar no WhatsApp
