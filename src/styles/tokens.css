@@ -1,0 +1,54 @@
+/* =========================================================
+   Argon Gate — Design Tokens (CSS Custom Properties)
+
+   Estes tokens são a fonte de verdade para toda a estilização.
+   Para alterar a identidade visual, modifique os valores abaixo.
+   ========================================================= */
+
+:root {
+  /* Cores — Background (4 camadas) */
+  --color-bg-primary: #08090A;
+  --color-bg-secondary: #0F1117;
+  --color-bg-surface: #141720;
+  --color-bg-elevated: #1A1D28;
+
+  /* Cores — Texto (4 níveis) */
+  --color-text-primary: #F0F2F5;
+  --color-text-secondary: #8A919E;
+  --color-text-tertiary: #5C6370;
+  --color-text-quaternary: #3D4250;
+
+  /* Cores — Bordas (2 estados) */
+  --color-border: #1A1E2A;
+  --color-border-hover: #2A2F3E;
+
+  /* Cores — Accent (3 variações) */
+  --color-accent: #2563EB;
+  --color-accent-hover: #1D4ED8;
+  --color-accent-glow: rgba(37, 99, 235, 0.15);
+  --color-accent-subtle: rgba(37, 99, 235, 0.08);
+
+  /* Tipografia */
+  --font-heading: 'Sora', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --tracking-hero: -0.03em;
+  --tracking-h1: -0.03em;
+  --tracking-h2: -0.02em;
+  --heading-tracking: -0.02em;
+
+  /* Tamanhos de fonte */
+  --text-hero: clamp(3rem, 6vw, 4.5rem);
+  --text-h1: clamp(2.5rem, 5vw, 4rem);
+  --text-h2: clamp(2rem, 3.5vw, 2.5rem);
+  --text-h3: clamp(1.25rem, 2vw, 1.75rem);
+  --text-body: clamp(1rem, 1.2vw, 1.125rem);
+  --text-small: 0.875rem;
+  --text-caption: 0.75rem;
+
+  /* Espaçamento */
+  --section-padding-y: clamp(5rem, 10vw, 10rem);
+  --max-width: 1200px;
+
+  /* Bordas */
+  --radius: 12px;
+}

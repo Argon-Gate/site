@@ -17,6 +17,7 @@ import {
 import type { LucideIcon } from 'lucide-react';
 import { Fragment } from 'react';
 import type { CSSProperties } from 'react';
+import { useSectionTracking } from '@/hooks/useSectionTracking';
 import { ScrollReveal } from './ScrollReveal';
 
 interface StepData {
@@ -182,8 +183,10 @@ function MobileConnector() {
 }
 
 export function HowWeWork() {
+    const sectionRef = useSectionTracking<HTMLElement>('processo');
+
     return (
-        <section id="processo" className="section-container">
+        <section id="processo" ref={sectionRef} className="section-container">
             <ScrollReveal>
                 <h2
                     style={{

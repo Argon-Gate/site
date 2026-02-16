@@ -15,7 +15,7 @@ export default function Home() {
         <div className="relative" style={{ overflowX: 'hidden' }}>
             <BackgroundGlow />
             <Header />
-            <main className="relative">
+            <main id="main-content" className="relative">
                 <Hero />
                 <SectionDivider />
                 <WhatWeDo />

@@ -2,6 +2,7 @@
 
 import { Code2, Plug, Wrench, GitBranch, TestTube, Gauge, Cog, FileCode } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
+import { useSectionTracking } from '@/hooks/useSectionTracking';
 import { ScrollReveal } from './ScrollReveal';
 
 interface ServiceItem {
@@ -21,8 +22,10 @@ const services: ServiceItem[] = [
 ];
 
 export function WhatWeDo() {
+    const sectionRef = useSectionTracking<HTMLElement>('servicos');
+
     return (
-        <section id="servicos" className="section-container">
+        <section id="servicos" ref={sectionRef} className="section-container">
             <ScrollReveal>
                 <h2
                     style={{

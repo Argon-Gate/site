@@ -1,5 +1,6 @@
 'use client';
 
+import { useSectionTracking } from '@/hooks/useSectionTracking';
 import { ScrollReveal } from './ScrollReveal';
 
 interface DifferentialItem {
@@ -31,8 +32,10 @@ const differentials: DifferentialItem[] = [
 ];
 
 export function Differentials() {
+    const sectionRef = useSectionTracking<HTMLElement>('diferenciais');
+
     return (
-        <section id="diferenciais" className="section-container">
+        <section id="diferenciais" ref={sectionRef} className="section-container">
             <ScrollReveal>
                 <h2
                     style={{

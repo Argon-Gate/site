@@ -1,6 +1,7 @@
 'use client';
 
 import { ArrowRight } from 'lucide-react';
+import { AnalyticsEvents } from '@/lib/analytics';
 
 export function Hero() {
     return (
@@ -55,7 +56,7 @@ export function Hero() {
 
                 {/* CTA */}
                 <div className="hero-animate hero-animate-delay-4">
-                    <a href="#contato" className="btn-primary">
+                    <a href="#contato" className="btn-primary" onClick={() => AnalyticsEvents.heroCtaClick()}>
                         Fale conosco
                         <ArrowRight size={18} strokeWidth={1.5} />
                     </a>

@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { Inter, Sora } from 'next/font/google';
 import './globals.css';
@@ -16,6 +17,8 @@ const inter = Inter({
     display: 'swap',
     weight: ['400', '500', '600'],
 });
+
+const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://argongate.com.br';
 
@@ -58,7 +61,7 @@ export const metadata: Metadata = {
         title: 'Argon Gate — Outsourcing de Desenvolvimento de Software',
         description:
             'Outsourcing de desenvolvimento de software sob medida. APIs, integrações, automação e sistemas escaláveis.',
-        images: ['/logo.png'],
+        images: ['/logo.webp'],
     },
     alternates: {
         canonical: '/',
@@ -83,7 +86,7 @@ const jsonLd = {
     description:
         'Outsourcing de desenvolvimento de software sob medida. APIs, integrações, automação e sistemas escaláveis.',
     url: BASE_URL,
-    logo: `${BASE_URL}/logo.png`,
+    logo: `${BASE_URL}/logo.webp`,
     areaServed: {
         '@type': 'Country',
         name: 'Brazil',
@@ -109,7 +112,13 @@ export default function RootLayout({
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             </head>
 
-            <body className={`${sora.variable} ${inter.variable}`}>{children}</body>
+            <body className={`${sora.variable} ${inter.variable}`}>
+                <a href="#main-content" className="skip-to-content">
+                    Pular para o conteúdo principal
+                </a>
+                {children}
+                {gaId && <GoogleAnalytics gaId={gaId} />}
+            </body>
         </html>
     );
 }
