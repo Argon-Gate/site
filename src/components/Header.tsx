@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 
 export function Header() {
@@ -20,7 +18,12 @@ export function Header() {
                     padding: '1rem 1.5rem',
                 }}
             >
-                <a href="#" className="flex items-center gap-2" style={{ textDecoration: 'none' }}>
+                <a
+                    href="#"
+                    className="flex items-center gap-2"
+                    style={{ textDecoration: 'none' }}
+                    aria-label="Argon Gate - Página inicial"
+                >
                     <span
                         style={{
                             display: 'flex',

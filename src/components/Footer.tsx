@@ -25,12 +25,15 @@ export function Footer() {
                     &copy; {year} Argon Gate. Todos os direitos reservados.
                 </span>
 
-                <nav className="flex gap-6">
+                <nav className="flex gap-6" aria-label="Navegação do rodapé">
                     <a href="#servicos" className="link-animated">
                         Serviços
                     </a>
                     <a href="#processo" className="link-animated">
                         Processo
+                    </a>
+                    <a href="#diferenciais" className="link-animated">
+                        Diferenciais
                     </a>
                     <a href="#contato" className="link-animated">
                         Contato

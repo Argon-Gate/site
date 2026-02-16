@@ -48,6 +48,7 @@ export function CTA() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-primary"
+                            aria-label="Chamar no WhatsApp"
                         >
                             <WhatsAppIcon size={18} />
                             Chamar no WhatsApp
