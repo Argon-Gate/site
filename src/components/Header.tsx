@@ -1,6 +1,6 @@
 'use client';
 
-import { Shield } from 'lucide-react';
+import Image from 'next/image';
 
 export function Header() {
     return (
@@ -21,7 +21,19 @@ export function Header() {
                 }}
             >
                 <a href="#" className="flex items-center gap-2" style={{ textDecoration: 'none' }}>
-                    <Shield size={24} className="text-accent" strokeWidth={1.5} />
+                    <span
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            width: 28,
+                            height: 28,
+                            borderRadius: '50%',
+                            backgroundColor: '#fff',
+                        }}
+                    >
+                        <Image src="/logo.png" alt="Argon Gate" width={18} height={18} />
+                    </span>
                     <span
                         style={{
                             fontFamily: 'var(--font-heading)',
