@@ -1,43 +1,27 @@
-# Post 06 — Por que entregamos o código-fonte ao cliente
+# Post 06 — Propriedade total do código-fonte
 
-- **Estágio:** Meio de funil
-- **Formato:** Carrossel (5 slides)
-- **Pilar:** Outsourcing Desmistificado
-- **Objetivo:** Explorar o diferencial de propriedade de código, atacando a objeção de vendor lock-in.
+- **Formato:** Carrossel (4 slides)
+- **Tema:** Política de entrega e propriedade intelectual
 
 ---
 
-## Slide 1 (Capa/Hook)
+## Slide 1
 
-"O código que a gente desenvolve é seu.
-100%. Sem ressalvas."
+Todo código desenvolvido pela Argon Gate é entregue ao cliente com propriedade total.
 
 ## Slide 2
 
-Muitas empresas de outsourcing retêm propriedade intelectual.
-Te dão acesso, mas não entregam.
-Você quer sair? Precisa negociar. Migrar? Começa do zero.
-
-É vendor lock-in disfarçado de parceria.
+Problema comum no mercado de outsourcing: fornecedores retêm propriedade intelectual do código. O cliente tem acesso ao sistema, mas não ao código-fonte. Migração ou troca de fornecedor exige renegociação ou reescrita — configurando vendor lock-in.
 
 ## Slide 3
 
-Na Argon Gate, ao final de cada projeto:
+Política de entrega da Argon Gate ao final de cada projeto:
 
-— Todo o código-fonte é entregue
-— Documentação técnica completa
-— Artefatos de arquitetura e decisão
+— Código-fonte completo entregue ao cliente
+— Documentação técnica (arquitetura, decisões, APIs)
+— Artefatos de infraestrutura e deploy
 — Liberdade total para manter, evoluir ou trocar de fornecedor
 
 ## Slide 4
 
-Por que fazemos isso?
-
-Porque confiança se constrói dando autonomia, não criando dependência.
-Se o cliente volta, é porque quer. Não porque precisa.
-
-## Slide 5 (CTA)
-
-Se o seu fornecedor atual não te dá acesso irrestrito ao código que você pagou, pergunte-se: é parceiro ou é âncora?
-
-→ Fale com a Argon Gate. Link na bio.
+O cliente tem autonomia para dar continuidade com time interno ou outro fornecedor a qualquer momento, sem dependência contratual ou técnica.

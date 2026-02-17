@@ -1,67 +1,57 @@
-# Post 05 — O processo que elimina 80% dos problemas de outsourcing
+# Post 05 — Processo de desenvolvimento da Argon Gate
 
-- **Estágio:** Meio de funil
-- **Formato:** Carrossel (10 slides)
-- **Pilar:** Engenharia com Processo
-- **Objetivo:** Apresentar o processo de 9 etapas como diferencial metodológico, gerando confiança.
+- **Formato:** Carrossel (9 slides)
+- **Tema:** Metodologia e processo de entrega
 
 ---
 
-## Slide 1 (Capa/Hook)
+## Slide 1
 
-"80% dos problemas de outsourcing acontecem antes da primeira linha de código."
+Processo de desenvolvimento de software da Argon Gate: 9 etapas, do entendimento do negócio à entrega em produção.
 
 ## Slide 2
 
-A maioria das empresas de outsourcing começa assim:
-"Manda o briefing que a gente desenvolve."
-
-E termina assim:
-"Não era isso que eu pedi."
-
-O problema nunca foi o código. Foi a falta de processo.
+Projetos de outsourcing falham quando começam pela implementação sem etapas prévias de alinhamento e especificação. O processo abaixo elimina esse problema.
 
 ## Slide 3
 
-Na Argon Gate, nenhum projeto começa sem estas 5 etapas:
+**Etapa 1 — Entendimento do Negócio**
+
+Análise do contexto: processos internos, desafios operacionais, stakeholders envolvidos e restrições técnicas.
 
 ## Slide 4
 
-1 → Entendimento do Negócio
+**Etapa 2 — Alinhamento de Intenção**
 
-Não pedimos briefing. Mergulhamos no contexto: processos, desafios, stakeholders, restrições.
+Definição clara do objetivo do projeto, resultado esperado e critérios de sucesso — antes de qualquer requisito técnico.
 
 ## Slide 5
 
-2 → Alinhamento de Intenção
+**Etapa 3 — Definição de Requisitos**
 
-Entendemos o que você quer, por que quer, e qual resultado espera. Antes de qualquer requisito.
+Tradução das necessidades em especificações técnicas documentadas e validadas com o cliente.
 
 ## Slide 6
 
-3 → Definição de Requisitos
+**Etapa 4 — Apresentação do Projeto**
 
-Traduzimos sua necessidade em especificações técnicas claras, objetivas e validadas com você.
+Proposta de arquitetura, stack tecnológica e abordagem técnica, apresentadas e aprovadas antes do início da implementação.
 
 ## Slide 7
 
-4 → Apresentação do Projeto
+**Etapa 5 — Planejamento e Cronograma**
 
-Você vê a solução proposta, arquitetura e abordagem antes de aprovar o início.
+Definição de etapas, prazos, marcos de entrega e critérios de aceite.
 
 ## Slide 8
 
-5 → Planejamento e Cronograma
+**Etapas 6-9 — Implementação, Documentação, Go-live e Entrega**
 
-Etapas, prazos e marcos definidos. Sem surpresas.
+- Implementação com comunicação contínua e entregas incrementais
+- Documentação técnica completa (código, arquitetura, decisões)
+- Acompanhamento do go-live e estabilização em produção
+- Entrega de 100% do código-fonte e artefatos ao cliente
 
 ## Slide 9
 
-Depois disso: implementação com comunicação contínua, documentação completa, acompanhamento em produção, e entrega com 100% de propriedade do código para o cliente.
-
-## Slide 10 (CTA)
-
-Outsourcing sem processo é aposta.
-Com processo, é investimento.
-
-→ Quer ver como funciona na prática? Link na bio.
+Resultado: o cliente recebe software funcionando em produção, documentado, testado e com total propriedade sobre o código.

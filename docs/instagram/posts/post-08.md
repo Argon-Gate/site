@@ -1,35 +1,29 @@
-# Post 08 — O que seu CTO quer dizer quando pede "mais devs"
+# Post 08 — Capacidade operacional vs. headcount
 
-- **Estágio:** Meio de funil
-- **Formato:** Roteiro de vídeo curto (Reels/Stories — 45-60s)
-- **Pilar:** Operação Inteligente
-- **Objetivo:** Reframing — o problema real não é headcount, é capacidade operacional. Posiciona a Argon Gate como solução estrutural.
+- **Formato:** Vídeo curto (45-60s)
+- **Tema:** Outsourcing como solução de capacidade
 
 ---
 
 ## Roteiro
 
-**[Cena 1 — Texto na tela + narração]**
-"Quando o CTO pede mais devs, ele não quer mais gente."
+**[Cena 1]**
+"A demanda por mais desenvolvedores geralmente não é um problema de headcount."
 
 **[Cena 2]**
-"Ele quer parar de fazer carryover todo sprint."
+"É um problema de capacidade operacional: sprints com carryover recorrente."
 
 **[Cena 3]**
-"Quer entregar a integração que está parada há 3 meses."
+"Integrações entre sistemas paradas há meses por falta de banda."
 
 **[Cena 4]**
-"Quer que o sênior pare de apagar incêndio e volte a fazer arquitetura."
+"Desenvolvedores sêniores alocados em suporte e incidentes em vez de arquitetura."
 
 **[Cena 5]**
-"Quer previsibilidade nas entregas."
+"Falta de previsibilidade nas entregas."
 
 **[Cena 6]**
-"O problema nunca é headcount. É capacidade operacional."
+"Outsourcing estruturado resolve o problema de capacidade sem expandir o quadro permanente."
 
-**[Cena 7]**
-"E isso se resolve com outsourcing estratégico, não com mais vagas no LinkedIn."
-
-**[Cena final — logo + CTA]**
-"Argon Gate — Outsourcing de desenvolvimento de software.
-Link na bio."
+**[Cena 7 — encerramento]**
+"Argon Gate — Desenvolvimento de software sob demanda com processo, documentação e entrega de código-fonte."

@@ -1,55 +1,44 @@
-# Post 12 — Build vs. Buy vs. Outsource: quando terceirizar é a decisão certa
+# Post 12 — Build vs. Buy vs. Outsource: critérios de decisão
 
-- **Estágio:** Fundo de funil
-- **Formato:** Carrossel (7 slides)
-- **Pilar:** Operação Inteligente
-- **Objetivo:** Posicionar outsourcing como decisão estratégica madura, não como atalho. Validar a decisão de quem está considerando contratar.
+- **Formato:** Carrossel (6 slides)
+- **Tema:** Modelos de execução de projetos de software
 
 ---
 
-## Slide 1 (Capa/Hook)
+## Slide 1
 
-"Build. Buy. Outsource.
-A decisão errada custa meses e orçamento.
-A certa, acelera o roadmap."
+Quando desenvolver internamente, comprar solução pronta ou terceirizar o desenvolvimento.
 
 ## Slide 2
 
 **Build (time interno):**
 
-✓ Quando: é core do produto e você precisa de controle total
-✗ Problema: leva 3-6 meses para contratar, onboarding e produtividade plena
+- Indicado quando: funcionalidade é core do produto e exige controle total sobre a implementação
+- Limitação: 3 a 6 meses entre contratação, onboarding e produtividade plena
 
 ## Slide 3
 
-**Buy (SaaS/produto pronto):**
+**Buy (SaaS / produto pronto):**
 
-✓ Quando: existe solução madura no mercado que resolve 80%+ da necessidade
-✗ Problema: customização limitada, dependência de roadmap do fornecedor
+- Indicado quando: existe solução madura no mercado que atende 80%+ da necessidade
+- Limitação: customização restrita e dependência do roadmap do fornecedor
 
 ## Slide 4
 
 **Outsource (parceiro de desenvolvimento):**
 
-✓ Quando: você precisa de capacidade técnica agora, com processo e qualidade, sem expandir o time permanente
-✓ Quando: o projeto tem escopo definido, prazo claro, e não é core do produto
-✓ Quando: precisa de especialização que o time interno não tem (integrações, APIs, sistemas legados)
+- Indicado quando: o projeto tem escopo definido, prazo claro e não é core do produto
+- Indicado quando: o time interno não tem banda ou especialização necessária (integrações, APIs, sistemas legados)
+- Indicado quando: a necessidade é imediata e contratar internamente levaria mais tempo do que o projeto permite
 
 ## Slide 5
 
-O outsourcing certo faz sentido quando:
+Critérios objetivos para escolher outsourcing:
 
-— O custo de oportunidade de não fazer é maior que o custo de terceirizar
-— O time interno não tem banda e contratar leva mais tempo do que o projeto permite
-— Você precisa de resultado, não de headcount
+— Custo de oportunidade de não executar é maior que o custo de terceirizar
+— Projeto requer especialização técnica temporária
+— Time interno precisa manter foco no core do produto
 
 ## Slide 6
 
-A decisão madura não é "terceirizar ou não".
-É "qual problema estou resolvendo e qual modelo entrega resultado no prazo que preciso?"
-
-## Slide 7 (CTA)
-
-Se a resposta for outsourcing, o próximo passo é escolher um parceiro com processo, documentação e compromisso com entrega.
-
-→ Fale com a Argon Gate. Link na bio.
+A Argon Gate atua no modelo de outsourcing estruturado para projetos com escopo definido: desenvolvimento de aplicações, integrações entre sistemas, APIs e evolução de sistemas legados.

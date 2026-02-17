@@ -1,41 +1,43 @@
-# Post 04 — Débito técnico não aparece no balanço. Mas cobra juros compostos.
+# Post 04 — Débito técnico: impacto operacional e abordagem de refatoração
 
-- **Estágio:** Topo de funil
 - **Formato:** Carrossel (5 slides)
-- **Pilar:** Operação Inteligente
-- **Objetivo:** Conectar um conceito técnico (débito técnico) a impacto financeiro, capturando tanto CTOs quanto CFOs/CEOs.
+- **Tema:** Refatoração e evolução de sistemas legados
 
 ---
 
-## Slide 1 (Capa/Hook)
+## Slide 1
 
-"Débito técnico não aparece no balanço.
-Mas cobra juros compostos."
+Débito técnico: como identificar, mensurar o impacto e planejar a refatoração.
 
 ## Slide 2
 
-Cada atalho no código é uma dívida.
-Cada "depois a gente refatora" é um juro acumulado.
+Débito técnico é o acúmulo de decisões de implementação que priorizam velocidade sobre qualidade estrutural.
 
-No começo não dói. Depois, cada feature nova leva 3x mais tempo, cada deploy é uma roleta, e cada integração vira um projeto.
+Consequências progressivas:
+- Features novas levam 3x mais tempo para implementar
+- Deploys se tornam instáveis e imprevisíveis
+- Integrações simples viram projetos complexos
 
 ## Slide 3
 
-Os sintomas que o C-level sente:
+Sintomas observáveis em nível de operação:
 
 — Entregas cada vez mais lentas
-— Estimativas que nunca batem
-— Instabilidade em produção
-— Medo de mexer no que "está funcionando"
+— Estimativas que não correspondem ao esforço real
+— Instabilidade recorrente em produção
+— Receio de alterar módulos que "estão funcionando"
 
 ## Slide 4
 
-A solução não é parar tudo e reescrever do zero.
-É ter um plano de refatoração contínua, com priorização técnica alinhada ao roadmap do produto.
+A abordagem correta não é reescrever do zero. É refatoração contínua com priorização técnica alinhada ao roadmap do produto.
 
-## Slide 5 (CTA)
+Isso inclui: análise de hotspots no código, cobertura de testes antes de refatorar, e evolução incremental com deploys seguros.
 
-Se seu time está refém do próprio sistema, é hora de agir.
-A Argon Gate trabalha em refatoração, melhoria de performance e evolução de sistemas em produção.
+## Slide 5
 
-→ Link na bio.
+Serviços da Argon Gate nessa área:
+
+- Diagnóstico de débito técnico em sistemas em produção
+- Planos de refatoração incremental
+- Melhoria de performance e estabilidade
+- Evolução de sistemas legados com documentação e testes

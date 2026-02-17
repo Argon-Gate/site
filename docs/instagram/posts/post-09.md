@@ -1,60 +1,50 @@
-# Post 09 — Checklist: seu outsourcing deveria entregar tudo isso
+# Post 09 — Critérios de avaliação para fornecedores de outsourcing
 
-- **Estágio:** Fundo de funil
-- **Formato:** Carrossel (7 slides)
-- **Pilar:** Engenharia com Processo
-- **Objetivo:** Criar critério de avaliação que favorece a Argon Gate, levando o prospect a questionar seu fornecedor atual.
+- **Formato:** Carrossel (6 slides)
+- **Tema:** Checklist de avaliação de fornecedor
 
 ---
 
-## Slide 1 (Capa/Hook)
+## Slide 1
 
-"Checklist: o que cobrar do seu outsourcing de desenvolvimento
-(a maioria não entrega nem metade)"
+Critérios técnicos e operacionais para avaliar um fornecedor de outsourcing de desenvolvimento.
 
 ## Slide 2
 
 **Antes do projeto:**
 
-☐ Entendimento real do negócio (não só briefing)
-☐ Alinhamento de intenção e resultado esperado
-☐ Requisitos documentados e validados com você
+☐ Análise do contexto de negócio (não apenas briefing)
+☐ Alinhamento de objetivos e resultado esperado
+☐ Requisitos documentados e validados com o cliente
 ☐ Arquitetura proposta e aprovada antes do início
-☐ Cronograma com marcos claros
+☐ Cronograma com marcos e critérios de aceite
 
 ## Slide 3
 
 **Durante o projeto:**
 
-☐ Comunicação contínua (não só report semanal)
+☐ Comunicação contínua sobre progresso e impedimentos
 ☐ Código com testes automatizados
 ☐ Entregas incrementais verificáveis
-☐ Transparência sobre impedimentos e riscos
+☐ Transparência sobre riscos técnicos
 
 ## Slide 4
 
 **Na entrega:**
 
 ☐ Documentação técnica completa
-☐ Código-fonte entregue ao cliente (100% propriedade)
+☐ Código-fonte entregue ao cliente (propriedade total)
 ☐ Acompanhamento do go-live
 ☐ Suporte na estabilização em produção
 
 ## Slide 5
 
-**Depois da entrega:**
+**Após a entrega:**
 
-☐ Liberdade para manter com outro time
-☐ Documentação suficiente para onboarding de novos devs
+☐ Documentação suficiente para onboarding de novos desenvolvedores
+☐ Liberdade para manter com time interno ou outro fornecedor
 ☐ Sem cláusula de lock-in ou dependência contratual
 
 ## Slide 6
 
-Se o seu fornecedor atual não cumpre essa lista, não é parceiro.
-É risco.
-
-## Slide 7 (CTA)
-
-Na Argon Gate, essa checklist é o mínimo. É nosso padrão operacional.
-
-→ Quer ver funcionando? Link na bio.
+Todos os itens acima fazem parte do processo padrão da Argon Gate em cada projeto.

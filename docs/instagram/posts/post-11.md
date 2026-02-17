@@ -1,53 +1,41 @@
-# Post 11 — O real custo de escolher o fornecedor errado
+# Post 11 — Riscos de outsourcing sem processo estruturado
 
-- **Estágio:** Fundo de funil
-- **Formato:** Carrossel (6 slides)
-- **Pilar:** Operação Inteligente
-- **Objetivo:** Amplificar o custo do risco de não escolher bem, criando urgência racional (não emocional).
+- **Formato:** Carrossel (5 slides)
+- **Tema:** Riscos operacionais e financeiros
 
 ---
 
-## Slide 1 (Capa/Hook)
+## Slide 1
 
-"O fornecedor errado de outsourcing não custa o valor do contrato.
-Custa o projeto inteiro."
+Impacto real de contratar outsourcing de desenvolvimento sem processo estruturado.
 
 ## Slide 2
 
-**Cenário real:**
+**Cenário típico de falha:**
 
-— Empresa contrata outsourcing pelo menor preço
-— Projeto começa sem alinhamento de requisitos
+— Projeto inicia sem alinhamento adequado de requisitos
 — 4 meses depois: entrega parcial, sem documentação, sem testes
 — Time interno precisa refazer 60% do que foi entregue
-— Total gasto: 2x o orçamento original + 6 meses de atraso
+— Resultado: 2x o orçamento original + 6 meses de atraso
 
 ## Slide 3
 
-**O que deu errado:**
+**Causas raiz:**
 
-— Não houve entendimento do negócio (só briefing genérico)
-— Sem processo de validação intermediária
-— Sem documentação → impossível dar manutenção
+— Ausência de análise de contexto do negócio
+— Sem processo de validação intermediária com o cliente
+— Sem documentação técnica — impossível dar manutenção
 — Sem acompanhamento pós-deploy
 
 ## Slide 4
 
-**O custo real:**
+**Impacto mensurável:**
 
-— Orçamento: estourou
-— Timeline: 6 meses de atraso em feature crítica
-— Equipe interna: 3 devs sêniores pararam o roadmap para refazer
-— Custo de oportunidade: imensurável
+— Orçamento: custo final 2x acima do previsto
+— Prazo: 6 meses de atraso em feature crítica
+— Equipe interna: desenvolvedores sêniores realocados para refazer o trabalho
+— Custo de oportunidade: roadmap de produto estagnado
 
 ## Slide 5
 
-A escolha do parceiro de outsourcing é uma decisão financeira, não operacional.
-Processo, documentação e comprometimento com resultado não são diferenciais. São requisitos mínimos.
-
-## Slide 6 (CTA)
-
-A Argon Gate existe para que esse cenário não se repita.
-Processo estruturado. Documentação completa. Código seu.
-
-→ Fale conosco. Link na bio.
+O processo da Argon Gate mitiga esses riscos com: análise de negócio, requisitos documentados, entregas incrementais validadas, documentação completa e acompanhamento em produção.

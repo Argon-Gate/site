@@ -1,45 +1,42 @@
-# Post 01 — O custo oculto de não terceirizar
+# Post 01 — Outsourcing de desenvolvimento vs. contratação interna
 
-- **Estágio:** Topo de funil
-- **Formato:** Carrossel (6 slides)
-- **Pilar:** Operação Inteligente
-- **Objetivo:** Gerar consciência sobre o custo real de manter times internos inchados vs. outsourcing estratégico.
+- **Formato:** Carrossel (5 slides)
+- **Tema:** Outsourcing de desenvolvimento de software
 
 ---
 
-## Slide 1 (Capa/Hook)
+## Slide 1
 
-"Sua empresa gasta R$ 25k/mês por dev.
-E ainda precisa de mais 3."
+Custos reais de manter um time interno de desenvolvimento vs. outsourcing estruturado.
 
 ## Slide 2
 
-O que ninguém contabiliza:
+Custos frequentemente subestimados na contratação interna:
 
-- Recrutamento: 45-90 dias para contratar um sênior
-- Encargos: 70-100% sobre o salário
-- Onboarding: 2-3 meses até produtividade plena
-- Turnover: a cada saída, o ciclo recomeça
+- Recrutamento: 45 a 90 dias para contratar um desenvolvedor sênior
+- Encargos trabalhistas: 70% a 100% sobre o salário base
+- Onboarding: 2 a 3 meses até produtividade plena
+- Turnover: reinício do ciclo a cada desligamento
 
 ## Slide 3
 
-Enquanto isso, seu backlog cresce.
-Integrações atrasam. Sistemas legados acumulam débito técnico.
-E o roadmap continua no slide de "próximos passos".
+Consequências operacionais durante esse período:
+
+- Backlog acumulado sem capacidade de execução
+- Integrações entre sistemas postergadas
+- Débito técnico crescente em sistemas legados
+- Roadmap de produto estagnado
 
 ## Slide 4
 
-Outsourcing estratégico não é "mão de obra barata".
-É capacidade técnica disponível agora, sem overhead operacional.
+Outsourcing estruturado oferece capacidade técnica imediata, sem overhead de contratação, encargos e gestão de pessoas.
+
+O time externo opera com processo próprio, entrega documentada e prazo definido.
 
 ## Slide 5
 
-A pergunta certa não é "quanto custa terceirizar?"
-É "quanto está custando não terceirizar?"
+Serviço oferecido pela Argon Gate:
 
-## Slide 6 (CTA)
-
-Se seu time não dá conta do backlog, o problema não é o time.
-É a estrutura.
-
-→ Link na bio para conversar com a Argon Gate.
+- Alocação de squads de desenvolvimento sob demanda
+- Processo estruturado de requisitos, arquitetura e entrega
+- Código-fonte e documentação entregues ao cliente

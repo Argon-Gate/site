@@ -1,32 +1,28 @@
-# Post 10 — 3 perguntas antes de contratar outsourcing
+# Post 10 — Critérios para contratação de outsourcing de desenvolvimento
 
-- **Estágio:** Fundo de funil
-- **Formato:** Post único (imagem com texto + legenda longa)
-- **Pilar:** Outsourcing Desmistificado
-- **Objetivo:** Armar o decisor com critérios de escolha que naturalmente apontam para a Argon Gate.
+- **Formato:** Post único (imagem + legenda)
+- **Tema:** Avaliação de fornecedor
 
 ---
 
 ## Imagem
 
-"3 perguntas que todo CTO deveria fazer antes de contratar outsourcing."
+"3 critérios técnicos para avaliar um fornecedor de outsourcing de desenvolvimento."
 
 ## Legenda
 
-**1. "O código é meu ou fico preso?"**
+**1. Propriedade do código-fonte**
 
-Se o fornecedor não entrega código-fonte, documentação e artefatos ao final do projeto, você não está contratando um serviço. Está criando uma dependência.
+O fornecedor deve entregar código-fonte, documentação técnica e artefatos de arquitetura ao final do projeto. Sem entrega completa, há risco de vendor lock-in.
 
-**2. "Qual é o processo — ou vocês só alocam gente?"**
+**2. Processo estruturado de entrega**
 
-Se não existe processo estruturado de entendimento, requisitos, planejamento e entrega, é body shop. Você vai gerenciar como se fosse seu time, pelo dobro do custo.
+O fornecedor deve ter processo definido que inclua: entendimento do negócio, especificação de requisitos, planejamento, implementação incremental e documentação. Sem processo, o cliente assume a gestão operacional — equivalente a alocação de profissionais (body shop).
 
-**3. "O que acontece depois do deploy?"**
+**3. Acompanhamento pós-deploy**
 
-Se a resposta for "a gente pode negociar um contrato de sustentação", fuja. Acompanhamento em produção e estabilização do go-live deveriam ser parte da entrega.
+Estabilização em produção e acompanhamento do go-live devem fazer parte do escopo de entrega, não ser negociados como contrato adicional.
 
 ---
 
-Essas três perguntas separam outsourcing estratégico de alocação de mão de obra.
-
-→ Na Argon Gate, as três respostas estão no nosso processo padrão. Link na bio.
+Esses três critérios diferenciam outsourcing estruturado de alocação de mão de obra. Os três fazem parte do processo padrão da Argon Gate.

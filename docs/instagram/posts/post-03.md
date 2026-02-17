@@ -1,30 +1,27 @@
-# Post 03 — API não é commodity. É infraestrutura de negócio.
+# Post 03 — Engenharia de integrações: APIs como infraestrutura crítica
 
-- **Estágio:** Topo de funil
-- **Formato:** Post único (imagem com texto + legenda longa)
-- **Pilar:** Engenharia com Processo
-- **Objetivo:** Educar o mercado sobre a criticidade de integrações bem feitas, posicionando expertise técnica.
+- **Formato:** Post único (imagem + legenda)
+- **Tema:** Desenvolvimento e integração de APIs
 
 ---
 
 ## Imagem
 
-Frase central: "Sua API é tão confiável quanto a pior integração que depende dela."
+"A confiabilidade de uma API é limitada pela pior integração que depende dela."
 
 ## Legenda
 
-A maioria das empresas trata integrações como tarefas operacionais. Conecta aqui, puxa dali, manda um webhook. Funciona em homologação, quebra em produção.
+Integrações entre sistemas frequentemente são tratadas como tarefas operacionais simples: conectar endpoints, enviar webhooks, mapear campos. Funcionam em homologação e falham em produção.
 
-O problema não é técnico. É de abordagem.
+O problema é de engenharia, não de execução pontual.
 
-Uma integração mal projetada entre seu ERP e seu sistema de vendas não é um bug. É um risco financeiro. Pedidos perdidos, dados inconsistentes, retrabalho manual que consome horas da equipe.
+Uma integração mal projetada entre ERP e sistema de vendas gera pedidos perdidos, dados inconsistentes e retrabalho manual.
 
-Integrações robustas exigem:
-— Mapeamento de fluxos de erro, não só do caminho feliz
+Práticas aplicadas pela Argon Gate em projetos de integração:
+
+— Mapeamento completo de fluxos de erro, não apenas do caminho feliz
 — Contratos de API documentados e versionados
-— Retry policies e circuit breakers
-— Monitoramento ativo, não reativo
+— Retry policies e circuit breakers para resiliência
+— Monitoramento ativo com alertas e métricas de saúde
 
-Não é preciosismo. É engenharia de software aplicada a resultados.
-
-→ Se suas integrações são uma fonte constante de incidentes, vale uma conversa. Link na bio.
+Entrega: integrações documentadas, testadas e com monitoramento em produção.

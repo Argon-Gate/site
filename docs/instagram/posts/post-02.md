@@ -1,40 +1,36 @@
-# Post 02 — 5 sinais de que seu time de engenharia está no limite
+# Post 02 — Sinais de que o time de engenharia precisa de reforço externo
 
-- **Estágio:** Topo de funil
 - **Formato:** Carrossel (7 slides)
-- **Pilar:** Outsourcing Desmistificado
-- **Objetivo:** Criar identificação com a dor do decisor, gerando engajamento e salvamentos.
+- **Tema:** Diagnóstico de capacidade operacional
 
 ---
 
-## Slide 1 (Capa/Hook)
+## Slide 1
 
-"5 sinais de que seu time de engenharia está no limite
-(e você ainda não percebeu)"
+5 indicadores de que o time de engenharia está operando acima da capacidade.
 
 ## Slide 2
 
-1. Todo sprint tem carryover. As entregas nunca fecham no prazo previsto. O backlog só cresce.
+1. Carryover recorrente entre sprints. Entregas não fecham no prazo planejado e o backlog cresce continuamente.
 
 ## Slide 3
 
-2. Integrações são sempre "para o próximo quarter". Conectar o ERP ao CRM virou uma promessa eterna que ninguém tem banda para resolver.
+2. Integrações entre sistemas são constantemente adiadas. Conexões entre ERP, CRM e outros sistemas ficam pendentes por falta de banda do time.
 
 ## Slide 4
 
-3. Seus devs sêniores fazem de tudo. Arquitetura, code review, deploy, suporte, onboarding de junior. Nenhum deles foca em entregar valor.
+3. Desenvolvedores sêniores acumulam funções. Arquitetura, code review, deploy, suporte e onboarding de novos membros — sem foco em entregas de valor.
 
 ## Slide 5
 
-4. Documentação é inexistente. Se o dev principal sair amanhã, ninguém sabe como o sistema funciona.
+4. Ausência de documentação técnica. Conhecimento concentrado em poucos desenvolvedores, criando risco operacional em caso de desligamento.
 
 ## Slide 6
 
-5. O CTO virou gestor de apagar incêndio. Em vez de pensar em estratégia, passa o dia resolvendo bugs e escalações.
+5. Liderança técnica consumida por operação. CTO/Tech Lead dedicando a maior parte do tempo a bugs, incidentes e escalações em vez de decisões estratégicas.
 
-## Slide 7 (CTA)
+## Slide 7
 
-Se 3 ou mais se encaixam, o problema não é falta de talento.
-É falta de capacidade operacional.
+Esses indicadores apontam para um problema de capacidade operacional, não de competência do time.
 
-→ A Argon Gate resolve isso. Link na bio.
+A Argon Gate atua como extensão técnica: squads com processo próprio que absorvem demandas sem sobrecarregar a equipe interna.
